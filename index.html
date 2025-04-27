@@ -3,6 +3,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
     </head>
     <body>
 
@@ -20,13 +21,12 @@
             </section>
 
             <!--input konversi-->
-            <form>
+            <form class="form-content">
 
                 <!--Area input-->
                 <div>
                     <label for="konversi-input">Celcius (&deg;C):</label>
                 </div>
-
                 <div>
                     <textarea id="konversi-input" name="konversi-input"></textarea>
                 </div>
@@ -39,30 +39,58 @@
             </form>
 
             <!--output hasil-->
-            <section>
-                <label for="result-output">Fahrenheit (&deg;F):</label>
-                <textarea id="result-output" readonly></textarea>
+            <section class="section-content">
+                <div>
+                    <label for="result-output">Fahrenheit (&deg;F):</label>
+                </div>
+                <div>
+                    <textarea id="result-output" readonly></textarea>
+                </div>
             </section>
 
             <!--output hasil kalkulasi-->
-            <section>
-                <label for="calculate-detail">Cara Kalkulasi:</label>
-                <textarea id="calculate-detail" readonly></textarea>
+            <section class="section-content">
+                <div>
+                    <label for="calculate-detail">Cara Kalkulasi:</label>
+                </div>
+                <div>
+                    <textarea id="calculate-detail" readonly></textarea>
+                </div>
             </section>
 
-            <hr class="separator">
+            <hr>
 
             <!--teks atau dokumentasi cara kalkulasi-->
             <section>
-                <h1>Cara Konversi dari Derajat Celcius (&deg;C) ke Derajat Fahrenheit (&deg;F):</h1>
+
+                <header>
+                    <h1>Cara Konversi dari Derajat Celcius (&deg;C) ke Derajat Fahrenheit (&deg;F):</h1>
+                </header>
+                <article>
+                    <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+
+                    <!--konten formula-->
+                    <div style="font-size: x-large;">
+                        <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 9/5) &plus; 32
+                    </div>
+
+                    <p>atau</p>
+
+                    <div style="font-size: x-large;">
+                        <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 1,8) &plus; 32
+                    </div>
+                </article>
+
             </section>
+
         </main>
 
         <!--area footer-->
         <footer>
 
+            <hr>
             <section>
-
+                <p>Made from scratch using help and learning materials from RevoU Fundamental Course</p>
             </section>
 
             <section>
