@@ -5,28 +5,71 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <section>
-            <header><h3>Masukkan suhu derajat Celcius (&deg;C) ke dalam kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h3></header>
-        </section>
 
-        <section>
-            <legend>Celcius (&deg;C):</legend>
-            <textarea class="textarea-input"></textarea>
-        </section>
+        <!--header, berisi judul-->
+        <header>
+            <h1 class="judul">Website Konversi Suhu</h1>
+            <h5 class="credit">Made with Love by Steven (a.k.a Xxdsanctuary) with help from RevoU</h5>
+        </header>
 
-        <section>
-            <legend>Fahrenheit (&deg;F)</legend>
-            <textarea class="textarea-output" readonly></textarea>
-        </section>
+        <!--isi konten, textarea, input, dan output-->
+        <main>
 
-        <section>
-            <legend>Cara Kalkulasi:</legend>
-            
-        </section>
+            <section>
+                <h3 class="sinopsis">Masukkan suhu derajat Celcius (&deg;C) ke dalam kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h3>
+            </section>
 
-        <section>
-            <p></p>
-        </section>
+            <!--input konversi-->
+            <form>
+
+                <!--Area input-->
+                <div>
+                    <label for="konversi-input">Celcius (&deg;C):</label>
+                </div>
+
+                <div>
+                    <textarea id="konversi-input" name="konversi-input"></textarea>
+                </div>
+
+                <!--Tombol untuk action-->
+                <button class="button-konversi">Konversi</button>
+                <button class="button-reset">Reset</button>
+                <button class="button-reverse">Reverse</button>
+
+            </form>
+
+            <!--output hasil-->
+            <section>
+                <label for="result-output">Fahrenheit (&deg;F):</label>
+                <textarea id="result-output" readonly></textarea>
+            </section>
+
+            <!--output hasil kalkulasi-->
+            <section>
+                <label for="calculate-detail">Cara Kalkulasi:</label>
+                <textarea id="calculate-detail" readonly></textarea>
+            </section>
+
+            <hr class="separator">
+
+            <!--teks atau dokumentasi cara kalkulasi-->
+            <section>
+                <h1>Cara Konversi dari Derajat Celcius (&deg;C) ke Derajat Fahrenheit (&deg;F):</h1>
+            </section>
+        </main>
+
+        <!--area footer-->
+        <footer>
+
+            <section>
+
+            </section>
+
+            <section>
+                <p>&copy; 2025 Steven C. All Rights Reserved.</p>
+            </section>
+
+        </footer>
 
     </body>
 </html>
