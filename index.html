@@ -3,7 +3,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
 
@@ -21,7 +21,7 @@
             </section>
 
             <!--input konversi-->
-            <form class="form-content">
+            <form class="form-content" id="form">
 
                 <!--Area input-->
                 <div>
@@ -32,8 +32,8 @@
                 </div>
 
                 <!--Tombol untuk action-->
-                <button class="button-konversi">Konversi</button>
-                <button class="button-reset">Reset</button>
+                <button class="button-konversi" onclick="konversi()">Konversi</button>
+                <button class="button-reset" type="reset">Reset</button>
                 <button class="button-reverse">Reverse</button>
 
             </form>
@@ -44,7 +44,7 @@
                     <label for="result-output">Fahrenheit (&deg;F):</label>
                 </div>
                 <div>
-                    <textarea id="result-output" readonly></textarea>
+                    <textarea name="result-output" id="result-output" readonly></textarea>
                 </div>
             </section>
 
@@ -54,7 +54,7 @@
                     <label for="calculate-detail">Cara Kalkulasi:</label>
                 </div>
                 <div>
-                    <textarea id="calculate-detail" readonly></textarea>
+                    <textarea name="calculate-detail" id="calculate-detail" readonly></textarea>
                 </div>
             </section>
 
