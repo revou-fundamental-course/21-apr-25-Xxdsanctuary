@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Website Konversi Suhu versi Steven</title>
         <link rel="stylesheet" href="css/style.css">
         <script src="js/script.js"></script>
     </head>
     <body>
 
         <!--header, berisi judul-->
-        <header>
+        <header style="text-align: center;">
             <h1 class="judul">Website Konversi Suhu</h1>
             <h5 class="credit">Made with Love by Steven (a.k.a Xxdsanctuary) with help from RevoU</h5>
         </header>
@@ -16,70 +16,77 @@
         <!--isi konten, textarea, input, dan output-->
         <main>
 
-            <section>
-                <h3 class="sinopsis">Masukkan suhu derajat Celcius (&deg;C) ke dalam kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h3>
+            <section class="container">
+                <h3 class="sinopsis">
+                    Masukkan suhu derajat Celcius (&deg;C) ke dalam kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)
+                </h3>
             </section>
 
             <!--input konversi-->
             <form class="form-content" id="form">
 
                 <!--Area input-->
-                <div>
+                <div class="container">
                     <label for="konversi-input">Celcius (&deg;C):</label>
                 </div>
-                <div>
+                <div class="container">
                     <textarea id="konversi-input" name="konversi-input"></textarea>
                 </div>
 
                 <!--Tombol untuk action-->
-                <button class="button-konversi" onclick="konversi()">Konversi</button>
-                <button class="button-reset" type="reset">Reset</button>
-                <button class="button-reverse">Reverse</button>
+                <div class="container">
+                    <button class="button-konversi" onclick="konversi()">Konversi</button>
+                    <button class="button-reset" onclick="reset_all()">Reset</button>
+                    <button class="button-reverse" onclick="konversi_reverse()">Reverse</button>
+                </div>
 
             </form>
 
             <!--output hasil-->
             <section class="section-content">
-                <div>
+                <div class="container">
                     <label for="result-output">Fahrenheit (&deg;F):</label>
                 </div>
-                <div>
+                <div class="container">
                     <textarea name="result-output" id="result-output" readonly></textarea>
                 </div>
             </section>
 
             <!--output hasil kalkulasi-->
             <section class="section-content">
-                <div>
+                <div class="container">
                     <label for="calculate-detail">Cara Kalkulasi:</label>
                 </div>
-                <div>
+                <div class="container">
                     <textarea name="calculate-detail" id="calculate-detail" readonly></textarea>
                 </div>
             </section>
 
-            <hr>
+            <br>
+            <hr class="separator">
+            <br>
 
             <!--teks atau dokumentasi cara kalkulasi-->
             <section>
-
-                <header>
+                <header class="container">
                     <h1>Cara Konversi dari Derajat Celcius (&deg;C) ke Derajat Fahrenheit (&deg;F):</h1>
                 </header>
-                <article>
-                    <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+                <div class="container">
+                    <article style="text-align: center;">
+                        <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
 
-                    <!--konten formula-->
-                    <div style="font-size: x-large;">
-                        <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 9/5) &plus; 32
-                    </div>
+                        <!--konten formula-->
+                        <div style="font-size: x-large;">
+                            <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 9/5) &plus; 32
+                        </div>
 
-                    <p>atau</p>
+                        <p>atau</p>
 
-                    <div style="font-size: x-large;">
-                        <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 1,8) &plus; 32
-                    </div>
-                </article>
+                        <div style="font-size: x-large;">
+                            <span class="formula">S</span><sub>(&deg;F)</sub> = (<span class="formula">S</span><sub>(&deg;C)</sub> &times; 1,8) &plus; 32
+                        </div>
+                    </article>
+                </div>
 
             </section>
 
@@ -88,7 +95,10 @@
         <!--area footer-->
         <footer>
 
-            <hr>
+            <br><br><br>
+            <hr class="footer-separator">
+            <br>
+
             <section>
                 <p>Made from scratch using help and learning materials from RevoU Fundamental Course</p>
             </section>

@@ -3,12 +3,13 @@ body {
 }
 
 textarea {
-    width: 300px;
+    width: 500px;
     height: 100px;
     padding: 15px;
     border: 2px solid;
     font-size: 16px;
     border-radius: 4px;
+    text-align: center;
 }
 
 main footer {
@@ -19,6 +20,7 @@ main footer {
 .judul h1 {
     font-size: 45px;
     font-family:"sans-serif";
+    text-align: center;
 }
 
 .credit {
@@ -26,32 +28,38 @@ main footer {
     color: royalblue;
 }
 
-.sinopsis {
-
+.division-separator {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .separator {
-
+    height: 10px;
 }
 
-.form-content {
+.container {
+    display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
-.section-content {
+.form-content .section-content {
     margin-bottom: 10px;
 }
 
 .button-konversi {
-
+    background-color: green;
+    color: white;
 }
 
 .button-reset {
-
+    background-color: red;
+    color: white;
 }
 
 .button-reverse {
-
+    background-color: blue;
+    color: white;
 }
 
 .formula {
