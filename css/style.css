@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: lightgray;
 }
 
 textarea {
@@ -8,7 +8,7 @@ textarea {
     padding: 15px;
     border: 2px solid;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -35,6 +35,12 @@ main footer {
 
 .separator {
     height: 10px;
+    background-color: darkcyan;
+}
+
+.footer-separator {
+    height: 5px;
+    background-color: black;
 }
 
 .container {
