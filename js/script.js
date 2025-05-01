@@ -12,6 +12,12 @@ function konversi() {
     let nilai_konversi = document.getElementById("konversi-input").value
     let nilai_hasil = (parseFloat(nilai_konversi) * 9/5) + 32
 
+    if (isNaN(nilai_konversi)) {
+        detail.value = "Masukkan Angka yang Benar..."
+        hasil.value = ""
+        return
+    }
+
 //    output hasil konversi dengan metode queryselector
     hasil.value = nilai_hasil.toFixed(2) + "°F"
     console.log(hasil.value)
@@ -53,6 +59,12 @@ function konversi_reverse() {
 //    perhitungan konversi
     let nilai_konversi = document.getElementById("konversi-input").value
     let nilai_hasil = (parseFloat(nilai_konversi) * 9/5) + 32
+
+    if (isNaN(nilai_konversi)) {
+        detail_reverse.value = "Masukkan Angka yang Benar..."
+        hasil.value = ""
+        return
+    }
 
 //    output hasil konversi reverse dengan metode queryselector
     hasil.value = nilai_hasil.toFixed(2) + "°F"
